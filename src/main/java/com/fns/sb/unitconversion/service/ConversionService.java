@@ -73,6 +73,9 @@ public class ConversionService {
                 case RANKINE:
                     targetValue =  ConversionUtil.kelvinToRankine(inputValue);
                     break;
+                case VNUMBER:
+                    targetValue =  ConversionUtil.kelvinToVNumber(inputValue);
+                    break;
             }
         }
 

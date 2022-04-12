@@ -4,7 +4,8 @@ public enum TemperatureUnit {
     CELSIUS("celsius"),
     KELVIN("kelvin"),
     FAHRENHEIT("fahrenheit"),
-    RANKINE("rankine");
+    RANKINE("rankine"),
+    VNUMBER("vnumber");
 
     public final String unit;
 

@@ -33,6 +33,17 @@ public class ConversionUtil {
     public static double kelvinToRankine(double kelvin) {
         return (kelvin - 273.15) * 9 / 5 + 491.67;
     }
+    public static double kelvinToVNumber(double kelvin) {
+        if(kelvin>=0 && kelvin<255.37)
+            return 0;
+        else if(kelvin>=255.37 && kelvin<273.15)
+            return 1;
+        else if(kelvin>=273.15 && kelvin<373.13)
+            return 2;
+        else if(kelvin>=373.13)
+            return 3;
+        return 0;
+    }
 
     public static double rankineToCelsius(double rankine) {
         return (rankine - 491.67) * 5 / 9;
@@ -43,6 +54,7 @@ public class ConversionUtil {
     public static double rankineToKelvin(double rankine) {
         return (rankine - 491.67) * 5 / 9 + 273.15;
     }
+
 
     /*VOLUME CONVERSIONS*/
     public static double litersToTablespoons(double liters){
